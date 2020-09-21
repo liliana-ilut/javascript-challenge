@@ -1,9 +1,9 @@
 // // Variables
 let button = d3.select("#filter-btn");
 let inputField1 = d3.select("#datetime");
-// let inputField2 = d3.select("#city");
+// // let inputField2 = d3.select("#city");
 // let tbody = d3.select("tbody");
-let resetbtn = d3.select("#reset-btn");
+// let resetbtn = d3.select("#reset-btn");
 // let columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
 // let populate = (dataInput) => {
@@ -15,7 +15,8 @@ let resetbtn = d3.select("#reset-btn");
 //   });
 // }
 
-// //Populate table
+
+// // //Populate table
 // populate(data);
 
 // // Filter by attribute
@@ -58,7 +59,7 @@ let resetbtn = d3.select("#reset-btn");
 
 
 
-
+let dataUfo = d3.select()
 // Get a reference to the table body
 let tbody = d3.select("tbody");
 
@@ -121,12 +122,14 @@ button.on("click", () => {
     filterDate
   }
 
-  if (response.dataUfo.length !== 0) {
-    populate(dataUfo);
+  if (response.dataUfo.length!== 0) {
+     data.forEach(function(dataUfo) {
+        console.log(dataUfo);
+        let row = tbody.append("tr");
+      });
   }
     else if (response.dataUfo.length === 0 && ((response.filterCity.length !== 0 || response.filterDate.length !== 0))){
       populate(filterCity) || populate(dataUfo);
-  
     }
     else {
       tbody.append("tr").append("td").text("No results found!"); 
