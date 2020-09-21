@@ -13,6 +13,9 @@ body {
 /* Make button more visible */
 .btn{
   background-color: #000066; 
+  position: absolute;
+  right: 50px;
+  left: 40px;
 }
 
 
