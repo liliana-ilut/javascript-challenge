@@ -1,5 +1,7 @@
 liliana-ilut.github.io/javascript-challenge/
 
+UFO.png
+
 # JavaScript Homework - JavaScript and DOM Manipulation
 
 ## Background
