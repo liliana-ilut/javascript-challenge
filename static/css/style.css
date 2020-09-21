@@ -76,6 +76,8 @@ select {
 
 #table-area th {
   text-align: center;
+  background-color: #1b1b641c;
+  color: white;
 }
 
 #table-area th:first-child,
@@ -154,7 +156,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #2c2f31;
   }
 
   #table-area tr td:last-child {
@@ -167,7 +169,7 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: aliceblue;
+    background: rgb(109, 113, 117);
   }
 
   #table-area td {
